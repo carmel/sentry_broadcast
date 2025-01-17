@@ -27,12 +27,12 @@ void main() async {
   final cli = BroadcastClient('ws://yourserver.com/crash-reports');
   await cli.connect();
   FlutterError.onError = (errorDetails) {
-    cli.send(errorDetails.exceptionAsString());
+    cli.report(errorDetails.exceptionAsString());
   };
   // Pass all uncaught asynchronous errors that aren't handled by the Flutter framework to Crashlytics
   PlatformDispatcher.instance.onError = (error, stack) {
-    cli.send(error.toString());
-    cli.send(stack.toString());
+    cli.report(error.toString());
+    cli.report(stack.toString());
     return true;
   };
   runApp(MyApp());

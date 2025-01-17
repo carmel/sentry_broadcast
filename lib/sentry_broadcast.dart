@@ -28,7 +28,7 @@ class BroadcastClient {
     }
   }
 
-  void send(String message) {
+  void report(String message) {
     _socket?.add(jsonEncode({'data': message, 'typ': 'text'}));
   }
 

@@ -16,7 +16,7 @@ void main() {
     });
     await cli.connect();
 
-    cli.send('${DateTime.now()}: message from flutter app');
+    cli.report('${DateTime.now()}: message from flutter app');
     // expect(calculator.addOne(0), 1);
   });
 }
