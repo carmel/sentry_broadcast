@@ -14,7 +14,7 @@ To use `sentry_broadcast`, add the following dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  sentry_broadcast: ^1.0.0
+  sentry_broadcast: ^1.0.1
 ```
 
 ## Usage
