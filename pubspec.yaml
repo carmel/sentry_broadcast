@@ -2,7 +2,7 @@ name: sentry_broadcast
 description: "report the crash information from your Flutter app via websockets."
 version: 1.0.0
 homepage: https://github.com/carmel/sentry_broadcast
-publish_to: https://pub.dev
+# publish_to: https://pub.dev
 
 environment:
   sdk: ^3.6.1
