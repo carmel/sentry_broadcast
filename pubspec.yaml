@@ -1,6 +1,6 @@
 name: sentry_broadcast
-description: "A new Flutter package project."
-version: 0.0.1
+description: "report the crash information from your Flutter app via websockets."
+version: 1.0.0
 homepage: https://github.com/carmel/sentry_broadcast
 
 environment:
